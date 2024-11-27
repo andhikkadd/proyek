@@ -70,6 +70,8 @@ def update_data(data_pemasukkan, data_pengeluaran):
                 data['nominal'] = nominal
                 data['tanggal'] = tanggal
                 print("Data pemasukkan telah diupdate")
+                return
+
         else:
             print("Data tidak ditemukan")
                 
@@ -84,6 +86,8 @@ def update_data(data_pemasukkan, data_pengeluaran):
                 data['tanggal'] = tanggal
                 data['kategori'] = kategori
                 print("Data Pengeluaran telah diupdate")
+                return
+            
         else:
             print("Data tidak ditemukan")
                       
