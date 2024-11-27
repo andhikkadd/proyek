@@ -67,7 +67,8 @@ def update_data(data_pemasukkan, data_pengeluaran):
             if data['judul'] == updateJudul:
                 nominal = input("Masukkan nominal: ")
                 tanggal = input("Masukkan tanggal: ")
-                data_pemasukkan.append(nominal, tanggal)
+                data['nominal'] = nominal
+                data['tanggal'] = tanggal
                 print("Data pemasukkan telah diupdate")
         else:
             print("Data tidak ditemukan")
@@ -79,7 +80,9 @@ def update_data(data_pemasukkan, data_pengeluaran):
                 nominal = input("Masukkan nominal: ")
                 tanggal = input("Masukkan tanggal: ")
                 kategori = input("Masukkan kategori: ")
-                data_pengeluaran.append(nominal, tanggal, kategori)
+                data['nominal'] = nominal
+                data['tanggal'] = tanggal
+                data['kategori'] = kategori
                 print("Data Pengeluaran telah diupdate")
         else:
             print("Data tidak ditemukan")
